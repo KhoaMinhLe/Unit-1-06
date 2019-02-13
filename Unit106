@@ -10,8 +10,14 @@ public class Unit106 {
 	public static void RollDie(int maxValue) {
 		
 		Random rand = new Random();
+		/* Picks a number from 1 - 5
+		 */
 		int number = rand.nextInt(6);
+		/* Adds 1 to random number to get the correct value. (1 - 5 becomes 1 - 6).
+		 */
 		number +=1;
+		/* Prints output.
+		 */
 		System.out.println("Rolling die... You've rolled a " + number + ".");
 	}
 
